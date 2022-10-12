@@ -95,8 +95,8 @@
     /* color-1(#eabe7c)
      * color-2(#23967f)
      */
-    --color-1 : #ff8906;
-    --color-2 : #f25f4c;
+    --color-1 : #078080;
+    --color-2 : #f45d48;
 
     /* theme color variations
      */
@@ -151,15 +151,15 @@
 
     /* text
      */
-    --color-text        : #a7a9be;
+    --color-text        : #222525;
     --color-text-dark   : var(--color-white);
-    --color-text-light  : var(--color-gray-7);
+    --color-text-light  : #222525;
     --color-placeholder : var(--color-gray-7);
 
     /* buttons
      */
-    --color-btn                    : #ff8906;
-    --color-btn-text               : #fffffe;
+    --color-btn                    : #078080;
+    --color-btn-text               : #232323;
     --color-btn-hover              : var(--color-white);
     --color-btn-hover-text         : var(--color-black);
     --color-btn-primary            : var(--color-1-dark);
@@ -174,13 +174,13 @@
     /* preloader
      */
     --color-preloader-bg : var(--color-gray-10);
-    --color-loader       : white;
+    --color-loader       : #078080;
     --color-loader-light : rgba(255, 255, 255, 0.1);
 
     /* others
      */
-    --color-body    : #0f0e17;
-    --color-border  : rgba(255, 255, 255, .05);
+    --color-body    : #f8f5f2;
+    --color-border  : #078080;
     --border-radius : 3px;
 }
 
@@ -1302,7 +1302,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family            : var(--font-2);
     font-weight            : 400;
-    color                  : var(--color-text-dark);
+    color                  : var(--color-2);
     font-variant-ligatures : common-ligatures;
     text-rendering         : optimizeLegibility;
 }
@@ -1555,7 +1555,7 @@ hr.fancy::before {
     font-weight : 300;
     font-size   : var(--text-md);
     line-height : var(--vspace-1_25);
-    color       : var(--color-text-dark);
+    color       : #222525;
 }
 
 .pull-quote {
@@ -2659,7 +2659,7 @@ img.u-pull-left {
     font-family    : var(--font-1);
     font-size      : var(--text-sm);
     font-weight    : 400;
-    color          : var(--color-white);
+    color          : var(--color-1);
     text-transform : uppercase;
     letter-spacing : .3em;
     margin-top     : 0;
@@ -2679,7 +2679,7 @@ img.u-pull-left {
     display          : block;
     height           : 1px;
     width            : 4rem;
-    background-color : rgba(255, 255, 255, 0.5);
+    background-color : var(--color-1);
     position         : absolute;
     top              : 50%;
     left             : 0;
@@ -2690,7 +2690,7 @@ img.u-pull-left {
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
-    color: #fffffe;
+    color: var(--color-2);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2939,7 +2939,7 @@ img.u-pull-left {
     height           : var(--header-height);
     background-color : var(--color-body);
     box-shadow       : var(--box-shadow);
-    border-bottom    : 1px solid var(--color-border);
+    border-bottom    : 1px solid #078080;
 }
 
 /* --------------------------------------------------------------------
@@ -2953,7 +2953,7 @@ img.u-pull-left {
     line-height         : var(--header-height);
     text-transform      : uppercase;
     letter-spacing      : .35em;
-    color               : white;
+    color               : #232323;
     transition-property : color, background-color;
 }
 
@@ -2962,6 +2962,7 @@ img.u-pull-left {
 .main-nav a:focus,
 .main-nav a:hover {
     color : var(--color-1);
+    background-color: #f8f5f2;
 }
 
 .mobile-home-link {
@@ -2980,10 +2981,11 @@ img.u-pull-left {
 
 .main-nav a {
     padding : 0 2rem 0 2.4rem;
+    background-color: #fffffe;
 }
 
 .main-nav .current a {
-    background-color : var(--color-gray-9);
+    background-color : #f8f5f2;
 }
 
 .main-nav ul {
@@ -3239,7 +3241,7 @@ img.u-pull-left {
 
 .intro-social a:focus,
 .intro-social a:hover {
-    color : white;
+    color : #078080;
 }
 
 /* --------------------------------------------------------------------
@@ -3507,6 +3509,7 @@ img.u-pull-left {
     font-size     : var(--text-lg);
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
+    color: #078080;
 }
 
 .timeline__meta {
@@ -3614,7 +3617,7 @@ img.u-pull-left {
     display             : block;
     width               : 100%;
     padding-left        : calc(5.5 * var(--space));
-    color               : #fffffe;
+    color               : #222525;
     transition-duration : .5s;
     position            : relative;
 }
@@ -3667,7 +3670,7 @@ img.u-pull-left {
     z-index          : 1;
     content          : "";
     display          : block;
-    background-color : rgba(255, 137, 6, 0.5);
+    background-color : rgba(7, 128, 128, 0.5);
     position         : absolute;
     top              : 0;
     left             : 0;
