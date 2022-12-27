@@ -33,8 +33,40 @@
     <!-- # preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader">
-        </div>
+        <div class="colorful"></div>
+
+<style>
+.colorful {
+   width: 86.4px;
+   height: 86.4px;
+   background: linear-gradient(90deg,#078080 50%,#f45d48 0) top/100% 50% no-repeat,
+          linear-gradient(90deg,#f45d48 50%,#078080 0);
+   -webkit-mask: linear-gradient(#000 0 0) 0 0/50% 50% no-repeat;
+   animation: colorful-ri47mk 2s infinite;
+}
+
+@keyframes colorful-ri47mk {
+   0% {
+      -webkit-mask-position: 0 0;
+   }
+
+   25% {
+      -webkit-mask-position: 100% 0;
+   }
+
+   50% {
+      -webkit-mask-position: 100% 100%;
+   }
+
+   75% {
+      -webkit-mask-position: 0 100%;
+   }
+
+   100% {
+      -webkit-mask-position: 0 0;
+   }
+}
+</style>
     </div>
 
 
@@ -92,9 +124,9 @@
                         </div>
 
                         <h1 class="text-huge-title">
-                            Je suis Esteban Becker, <br>
-                            étudiant ingénieur <br>
-                            en informatique.
+                            I am Esteban Becker, <br>
+                            student in <br>
+                            computer science.
                         </h1>
                     </div>
 
